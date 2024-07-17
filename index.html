@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+        .my_menu {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            background-color: dodgerblue;
+        }
+        .menu li {
+            list-style-type: none;
+            width: 150px;
+            height: 50px;
+            background-color: #2196f3;
+            margin-left: 40px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+        }
+        .menu li:hover {
+            background-color: black;
+        }
+        .menu li a:hover {
+            color: aqua;
+        }
+        .menu li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+        .logo {
+            width: 60px;
+        }
+        .logo_li:hover {
+            background-color: #2196f3 !important;
+        }
+        .logo_li a {
+            font-size: 30px;
+            background-color: orangered;
+        }
+        .logo_li a:hover {
+            color: white !important;
+        }
+        .menu ul li {
+            margin: 0px;
+        }
+        .menu ul {
+            display: none;
+        }
+        .menu li:hover ul {
+            display: block;
+        }
+        /* banner */
+        #banner img {
+            margin-top: 40px;
+            width: 100%;
+        }
+        /* why choose us */
+        #why_choose {
+            width: 100%;
+            text-align: center;
+        }
+        #why_choose h1 {
+            margin: 0 auto;
+            width: 300px;
+            font-size: 30px;
+            color: red;
+            border-bottom: 2px solid red;
+        }
+        .div_section1 {
+            width: 20%;
+            height: 300px;
+            margin: 30px;
+            float: left;
+        }
+        .icon {
+            width: 120px;
+            height: 120px;
+            border: 1px solid gray;
+            margin: 10px auto;
+            line-height: 120px;
+            font-size: 50px;
+            background-color: darkred;
+            color: white;
+            border-radius: 50px;
+            transition-duration: 0.3s;
+        }
+        .icon:hover {
+            font-size: 40px;
+        }
+        /* section2 */
+        .section2 {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        .section2 h1 {
+            margin: 0 auto;
+            width: 400px;
+            font-size: 30px;
+            color: red;
+            border-bottom: 2px solid red;
+        }
+        .div_section2 {
+            width: 30%;
+            height: 300px;
+            margin: 20px;
+            float: left;
+        }
+        /* about us section */
+        .about_us {
+            width: auto;
+            text-align: center;
+            background-color: dodgerblue;
+            padding: 20px 0;
+        }
+        .about_us h1 {
+            margin: 0 auto;
+            width: 400px;
+            font-size: 30px;
+            color: red;
+            border-bottom: 2px solid red;
+        }
+        .about_us p {
+            color: rgb(0, 0, 0);
+            font-size: 1.4em;
+        }
+        .about_us button {
+            margin-top: 20px;
+            background-color: rgb(36, 34, 31);
+            border: none;
+            color: rgb(255, 255, 255);
+            width: 120px;
+            height: 40px;
+        }
+        .about_us ul {
+            list-style: none;
+            padding: 0;
+        }
+        .about_us ul li a {
+            color: rgb(255, 255, 255);
+            font-size: 1.4em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* footer */
+        .footer {
+            width: 100%;
+            height: auto;
+            background-color: yellowgreen;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer h1 {
+            color: rgb(55, 0, 255);
+        }
+        .footer p {
+            color: rgb(0, 0, 0);
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li a {
+            color: rgb(255, 0, 0);
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* social links */
+        .social_links {
+            width: 100%;
+            text-align: center;
+            background-color: rgba(138, 146, 158, 0.733);
+            padding: 20px 0;
+        }
+        .social_links h1 {
+            margin: 0 auto;
+            width: 300px;
+            height: auto;
+            font-size: 30px;
+            color: rgb(153, 0, 255);
+            border-bottom: 2px solid red;
+        }
+        .social_links p{
+            margin: 0 auto;
+            width: 300px;
+            font-size: 2em;
+            text-align: center;
+            color: black;
+        }
+
+        .social_links .social_link {
+            background-color: rgb(255, 255, 255);
+            color: rgb(55, 0, 255);
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .under_footer {
+            display: inline-block;
+            width: 100%;
+            height: 90px;
+            line-height: 60px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+        }
+        .footer1 {
+            width: 50%;
+            font-size: 150%;
+            float: left;
+        }
+        .footer1 p {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <!-- fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+    <div class="my_menu">
+        <ul class="menu">
+            <li class="logo_li"><img src="logo.png" width="60" height="50"></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#">All Courses  <i class="fas fa-sort-down"></i></a>
+                <ul>
+                    <li><a href="#">MSC</a></li>
+                    <li><a href="#">MCA</a></li>
+                    <li><a href="#">MBA</a></li>
+                    <li><a href="#">M.Tech</a></li>
+                    <li><a href="#">BE</a></li>
+                    <li><a href="#">B.Tech</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="#section4">About us</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="#why_choose">Facilities</a></li>
+            <li><a href="#social">Contact us</a></li>
+        </ul>
+    </div>
+
+    <!-- banner -->
+    <div id="banner">
+        <img src="46.jpeg" alt="banner">
+    </div>
+
+    
+    <!-- why choose us -->
+    <section id="why_choose">
+        <br><br><br>
+        <h1>Why Choose Us</h1>
+        <div class="div_section1">        
+            <div class="icon"><i class="fas fa-school"></i></div>
+            <h2>Huge College Campus</h2>
+            <p>The diversification and expansion of the college through adoption of new and typically relevant courses has led to further enhancement of our infrastructure in order to fulfill our growing needs.</p>
+        </div>
+        <div class="div_section1">        
+            <div class="icon"><i class="fas fa-laptop"></i></div>
+            <h2>Computer Education</h2>
+            <p>Computers have taken over a major part of human activities and enabled people to have more leisure by reducing his work load.Computer Education is started from the primary classes and is one of the optional subjects in the senior secondary classes.</p>
+        </div>
+        <div class="div_section1">        
+            <div class="icon"><i class="fas fa-music"></i></div>
+            <h2>Music & Dance</h2>
+            <p>Training of vocal as well as instrumental music is provided according to the taste and interest of the students from 1st year to final year.'Indian classical and 'western dance' are taught in the school by experts to rain,guide and help those students interested in this form of art.</p>
+        </div>
+        <div class="div_section1">        
+            <div class="icon"><i class="fas fa-flask"></i></div>
+            <h2>Science Laboratory</h2>
+            <p>The college has a equipped laboratory of Physics,Chemistry,Biology,Computer Science,Maths and Social studies for the students to experiment and learn because learning by doing makes concrete concept formation.</p>
+        </div>
+    </section>
+
+    <!-- Our school details -->
+        <section class="section2">
+            <br><br><br><br>
+            <h1>OUR COLLEGE FACILITIES</h1>
+            <div class="div_section2">
+                <img src="admission.jpeg" alt="xyz">
+                <h1>Admission Procedure</h1>
+                <p>Apply online, submit transcripts, test scores, and supporting documents. Our admissions team reviews applications, considering academic achievement, extracurricular activities."</p>
+            </div>
+            <div class="div_section2">
+                <img src="lab.jpeg" alt="xyz">
+                <h1>Lab Facilities</h1>
+                <p>"State-of-the-art labs equipped with cutting-edge technology and equipment, fostering innovation and discovery in biology, chemistry, physics, engineering, and more, under expert faculty guidance</p>
+            </div>
+            <div class="div_section2">
+                <img src="sports.jpeg" alt="xyz">
+                <h1>Sports Corner</h1>
+                <p>"State-of-the-art facilities, experienced coaches, and a range of sports programs foster a spirit of teamwork, discipline, and fair play, developing well-rounded individuals who excel in all areas."</p>
+            </div>
+            <div class="div_section2">
+                <img src="47.jpg"width="70%"height=200px alt="xyz">
+                <h1>Computer Facilities</h1>
+                <p>The Computer lab is equipped with 37 computers, all with genuine Windows 10 operating system and 4 GB of RAM. These computers are internet enabled and are available for students for their various computing needs. Students can avail the facilities during the free hours provided the lab is free or during intervals.</p>
+            </div>
+            <div class="div_section2">
+                <img src="49.jpg" width="70%"height=200px alt="xyz">
+                <h1>Library</h1>
+                <p>The College Library is fully automated with state-of-the-art technology and holds a good collection of print and digital resources helpful to the users for their teaching, learning and other activities. The library, at present, has a total collection of 54291 books, both print and digital in almost all the rel-evant subjects.</p>
+            </div>
+            <div class="div_section2">
+                <img src="48.jpg" width="70%"height=200px alt="xyz">
+                <h1>Auditorium</h1>
+                <P>The college  is well ventilated and has a seating capacity of about 500. academic programmes like seminars, workshops, symposiums, Guest Lectures, Art & Cultural Events etc.</P>
+            </div>
+         </section>
+    </section><br><br><br><br><br><br><br>
+
+    <!-- About Us -->
+    <section id="section4">
+    <section class="about_us">
+        <h1>ABOUT US</h1>
+        <p>"At Madras Institute, we are dedicated to providing a world-class education that empowers students to succeed. With a rich history and a commitment to academic excellence, innovation, and community engagement, we have established ourselves as a premier institution for higher learning. Our diverse and vibrant campus community comprises 500 students, faculty, and staff from all 50 states and over 50 countries. We offer a range of undergraduate and graduate programs in [fields of study], taught by renowned faculty who are experts in their fields. Our students have access to state-of-the-art facilities and a range of resources, including academic advising, counseling, and career support. We are committed to providing a supportive and inclusive environment that values diversity, equity, and inclusion. Our goal is to prepare students for success and to make a positive impact in the world."</p>
+        <ul>
+            <li><a href="#">About college</a></li>
+            <li><a href="#">Director Message</a></li>
+            <li><a href="#">Principal Message</a></li>
+            <li><a href="#">Our Motto</a></li><br>
+        </ul>
+        <h1>ACADEMICS</h1><br>
+            <ul>
+                <li><a href="#">Admission Procedure</a></li>
+                <li><a href="#">Lab Facilities</a></li>
+                <li><a href="#">Sports Corner</a></li>
+                <li><a href="#">Library</a></li>
+                <li><a href="#">Dimensions Of College</a></li>
+                <li><a href="#">Transport Facility</a></li>
+                <li><a href="#">Fee Deatails</a></li>
+            </ul>
+    </section>
+    </section>
+
+    <!-- Social Links -->
+    <section id="social">
+    <section class="social_links">
+        <h1>CONTACT US</h1><br>
+         <p>Social links</p>
+        <div class="social_link">
+            <i class="fab fa-facebook-square fa-2x"></i>&nbsp;
+            <i class="fab fa-twitter-square fa-2x"></i>&nbsp;
+            <i class="fab fa-instagram fa-2x"></i>&nbsp;
+            <i class="fas fa-envelope-square fa-2x"></i>
+        </div>
+       <h3<i class="fas fa-phone-square"></i>555-555-5555</h3>
+    </section>
+    </section>
+
+    <!-- Footer -->
+    <div class="under_footer">
+        <div class="footer1"><p>Copyright @ All Rights Reserved</p></div>
+        <div class="footer1"><p>Designed by Team 5</p></div>
+    </div><br><br>
+</body>
+</html>
